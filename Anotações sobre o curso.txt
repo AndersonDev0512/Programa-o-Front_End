@@ -1,0 +1,17 @@
+Cor e Imagem
+background-attachment: fixed; - Fixar imagem na propriedade CSS
+background-attachment: scroll; - Fixar imagem na propriedade CSS
+background-image: Seleciona imagem para o seu fundo via CSS
+font-size: - Tamanho da fonte podendo ser: "px,em,%
+background-position: X Y, Right Center e Left, Top,bottom 
+
+
+Background único "Cor" (url('caminho') "Repetição" "Posição"
+
+Normalmente numa div da Navegação para contéudos de navegação você usa um UL(Lista não ordenada)
+
+
+dúvidas do cursinho:
+
+1# Diferença de uma Div e uma Span?
+2# a sigla usada é realmente Font-Color ou simplesmente Color 
