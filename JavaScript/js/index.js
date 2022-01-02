@@ -69,10 +69,39 @@ document.write(variavel1.toString() + variavel2.toString());
 var nome = prompt("Digite o seu nome");
 var altura = prompt("Digite a sua altura em Centimetros");
 var peso = prompt("Digite o seu peso");
+var classificacao
 peso = parseFloat(peso);
 altura = parseFloat(altura);
-var M= peso / (altura *altura);
-console.log(M);
+altura = altura/100;
+var imc = peso / (altura *altura);
+
+if (imc <16) {
+     classificacao = "Baixo peso muito grave";
+}
+else if (imc >=16 && imc <=16.99) {
+    classificacao = "Baixo Peso Grave";
+}
+else if (imc >=17 && imc <=18.49) {
+    classificacao = "Baixo Peso";
+}
+else if (imc >=18.50 && imc <=24.99) {
+    classificacao = "Peso Normal";
+}
+else if (imc >=25 && imc <=29.99) {
+    classificacao = "Sobrepeso";
+}
+else if (imc >=30 && imc <=34.99) {
+    classificacao = "Obesidade Grau 1";
+}
+else if (imc >=35 && imc <=39.99) {
+    classificacao = "Obesidade Grau 2";
+}
+else if (imc >40) {
+    classificacao = "Obesidade Grau 3";
+}
+    document.write(nome+ " Possui índice de massa corporal igual a ", imc.toFixed(2) + " sendo classificado como: " + classificacao);
+
+//document.write(M);
 
 
 
